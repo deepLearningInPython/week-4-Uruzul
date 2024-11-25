@@ -10,7 +10,7 @@ import numpy as np
 #                and more readable.
 
 # List comprehension provides a concise way to create lists by embedding a for-loop inside 
-# square brackets.
+# square brackets. 
 # Syntax: [expression for item in iterable if condition] (condition is optional).
 # Example: squares = [x**2 for x in range(10) if x % 2 == 0]
 
@@ -25,11 +25,10 @@ import numpy as np
 #   comprehension.
 
 # Your code here:
-# -----------------------------------------------
 text = "The quick brown fox jumps over the lazy dog!"
 
 # Write a list comprehension to tokenize the text and remove punctuation
-tokens = _ # Your code here
+tokens = [word.strip(",!?:;) for word in text.split()]
 
 # Expected output: ['The', 'quick', 'brown', 'fox', 'jumps', 'over', 'the', 'lazy', 'dog']
 print(tokens)
