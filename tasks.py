@@ -79,7 +79,7 @@ word_frequencies = {word: tokens.count(word) for word in tokens}
 print(word_frequencies)
 
 # Modify the comprehension to include only words that appear more than once.
-word_frequencies_above_one = {word: count for word, count in word_frequencies.items() if count > 1}
+word_frequencies_above_one = {word: count for word, count in word_frequencies.items() if count >= 1}
 print(word_frequencies_above_one)
 
 # -----------------------------------------------
