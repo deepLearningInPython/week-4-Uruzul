@@ -160,7 +160,7 @@ def make_vocabulary_map(documents: list) -> tuple:
     unique_tokens = sorted(set(word for doc in documents for word in tokenize(doc)))
     token_to_id = {token: idx for idx, token in enumerate(unique_tokens)} 
     id_to_token = {idx: token for token, idx in token_to_id.items()}
-    return token_to_it, id_to_token
+    return token_to_id, id_to_token
 
 
 # Test
